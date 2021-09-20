@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalculatorButton test SNapshot test 1`] = `
+<div>
+  <button
+    class="operator"
+    value="6"
+  >
+    6
+  </button>
+</div>
+`;

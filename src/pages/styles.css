@@ -1,0 +1,129 @@
+.application {
+  background-color: #202020;
+  border-radius: 6px;
+  padding: 16px 12px;
+  border: 2px solid #444444;
+  box-shadow: 0 16px 32px 12px rgba(0, 0, 0, 0.7);
+  width: 340px;
+  display: grid;
+}
+
+h1 {
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 0 0 2px #aaaaaa;
+}
+
+p {
+  color: #aaaaaa;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+textarea, section {
+  height: 180px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  background-color: rgb(193, 227, 255);
+  border: 2px solid #888888;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 32px;
+  overflow-x: auto;
+  outline: none;
+  resize: none;
+  margin-bottom: 24px;
+  cursor: default;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #444444;
+}
+
+section > h2 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+section > a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ff944d;
+}
+
+textarea::-webkit-scrollbar {
+  width: 8px;
+  padding-inline: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #666666;
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+button {
+  font-family: "Lucida Console";
+  font-size: 48px;
+  font-weight: 700;
+  outline: none;
+  min-width: 75px;
+  min-height: 40px;
+  cursor: pointer;
+  font-size: 32px;
+  border: none;
+  border-radius: 5px;
+  padding-top: 6px;
+}
+
+button:hover {
+  filter: contrast(150%);
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.buttons-container > .digit {
+  background-color: #b3b3b3;
+}
+
+.buttons-container > .operator {
+  background-color: rgb(127, 104, 150);
+}
+
+.buttons-container > .clear {
+  background-color: #dd4e4e;
+}
+
+.buttons-container > .equal {
+  grid-column: 4;
+  grid-row: 3 / span 2;
+  background-color: #3fc450;
+}
+
+.buttons-container > .on-off {
+  background-color: #43abff;
+  font-size: 30px;
+  color: #000000;
+}
+
+.buttons-container > .redo {
+  grid-column: 4;
+  grid-row: 2;
+  background-color: #dda52c;
+}
